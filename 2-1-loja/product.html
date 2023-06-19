@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="/css/main-styles.css">
+    <link rel="stylesheet" href="/css/product-page.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/assets/fonts/WhyteInktrap-Book.woff2">
+</head>
+<body>
+    <nav>
+        <div class="nav-logo"><img src="/assets/edit-extended-logo.png" alt="logo"></div>
+        <div class="nav-options">
+            <div class="option-seating">
+                <a class="option-name" href="seating.html">Seating</a>
+                <img src="/assets/Vector 1.png" alt="chevron-down">
+                <div class="mega-menu-seating">
+                    <div class="shop category">
+                        <ul>
+                            <li class="title_list">Shop by Category</li>
+                            <li class="option"><a href="#">Sectionals</a></li>
+                            <li class="option"><a href="#">Sofas</a></li>
+                            <li class="option"><a href="#">Loveseats</a></li>
+                            <li class="option"><a href="#">Accent Chairs</a></li>
+                            <li class="option"><a href="#">Sleepers</a></li>
+                            <li class="option"><a href="#">Sleep Kits</a></li>
+                            <li class="option"><a href="#">Ottomans</a></li>
+                            <li class="option"><a href="#">Seating Accessories</a></li>
+                            <li class="option"><a href="#">All Seating</a></li>
+                        </ul>
+                    </div>
+                    <div class="shop upholstery">
+                        <ul>
+                            <li class="title_list">Shop by Upholstery</li>
+                            <li class="option"><a href="#">Perfomance Fabric Seating</a></li>
+                            <li class="option"><a href="#">Italian Leather Seating</a></li>
+                            <li class="option"><a href="#">Perfomance Velvet Seating</a></li>
+                            <li class="option"><a href="#">All Seating</a></li>
+                        </ul>
+                    </div>
+                    <div class="shop collection">
+                        <ul>
+                            <li class="title_list">Shop by Collection</li>
+                            <li class="option"><a href="#">Nomad Collection</a></li>
+                            <li class="option"><a href="#">Field Collection</a></li>
+                            <li class="option"><a href="#">Range Collection</a></li>
+                            <li class="option"><a href="#">Union Collection</a></li>
+                            <li class="option"><a href="#">NEW</a></li>
+                            <li class="option"><a href="#">Compare Collection</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="option-livingroom">
+                <a class="option-name" href="livingroom.html">Living Room</a>
+                <img src="/assets/Vector 1.png" alt="chevron-down">
+                <div class="mega-menu-livingroom">
+                    <div class="shop category">
+                        <ul>
+                            <li class="title_list">Shop by Category</li>
+                            <li class="option"><a href="#">Sectionals</a></li>
+                            <li class="option"><a href="#">Sofas</a></li>
+                            <li class="option"><a href="#">Accent Chairs</a></li>
+                            <li class="option"><a href="#">Sleepers</a></li>
+                            <li class="option"><a href="#">Fabric Seating</a></li>
+                            <li class="option"><a href="#">Leather Seating</a></li>
+                            <li class="option"><a href="#">Velvet Seating</a></li>
+                            <li class="option"><a href="#">Seating Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="shop accessories">
+                        <ul>
+                            <li class="title_list">Shop by Accessories</li>
+                            <li class="option"><a href="#">Seating Accessories</a></li>
+                            <li class="option"><a href="#">Throw Pillows</a></li>
+                            <li class="option"><a href="#">Throw Blankets</a></li>
+                            <li class="option"><a href="#">All Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="option-outdoor">
+                <a href="seating.html">Outdoor</a>
+                <img src="/assets/Vector 1.png" alt="chevron-down">
+            </div>
+            <div class="option-bedroom">
+                <a href="seating.html">Bedroom</a>
+                <img src="/assets/Vector 1.png" alt="chevron-down">
+            </div>
+            <div class="option-storage">
+                <a href="seating.html">Storage</a>
+                <img src="/assets/Vector 1.png" alt="chevron-down">
+            </div>
+        </div>
+        <div class="nav-hamburger">
+            <img src="/assets/hamburger.png" alt="">
+        </div>
+    </nav>
+
+    <section>
+        <div class="product">
+            <div class="product-main">
+                <div class="product-images">
+                    <img src="" alt="" id="product-image">
+                </div>
+                <div class="product-main-options">
+                    <div class="product-main-info">
+                        <h2 class="title" id="product-title"></h2>
+                        <p class="price" id="product-price"></p>
+                    </div>
+                    <div class="product-colors">
+                        <p class="description" id="product-color"></p>
+                    </div>
+                    <div class="product-styles">
+                        <div class="styles">
+                            <p class="category" id="product-arm-style"></p>
+                        </div>
+                        <div class="rating">
+                            <p class="rate" id="product-rating"></p>
+                            <p class="rate-count" id="product-rating-count"></p>
+                        </div>
+                    </div>
+                    <div class="button-cart">
+                        <div class="button yellow" id="add-to-cart">Add to Cart</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="related-products">
+            <h2>Related Products</h2>
+            <div class="product-grid" id="related-products-grid"></div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="dimensions-section">
+            <div class="section-title">Dimensions</div>
+            <div class="dimensions-align">
+                <div class="dimensions">
+                    <div class="dimensions-info">
+                        <div class="dimension-text">
+                            General Dimensions
+                        </div>
+                        <div class="dimension-text">
+                            86" L x 61" D x 33" H
+                        </div>
+                    </div>
+                    <div class="dimensions-info">
+                        <div class="dimension-text">
+                            General Dimensions
+                        </div>
+                        <div class="dimension-text">
+                            86" L x 61" D x 33" H
+                        </div>
+                    </div>
+                    <div class="dimensions-info">
+                        <div class="dimension-text">
+                            General Dimensions
+                        </div>
+                        <div class="dimension-text">
+                            86" L x 61" D x 33" H
+                        </div>
+                    </div>
+                    <div class="dimensions-info">
+                        <div class="dimension-text">
+                            General Dimensions
+                        </div>
+                        <div class="dimension-text">
+                            86" L x 61" D x 33" H
+                        </div>
+                    </div>
+                    <div class="dimensions-info">
+                        <div class="dimension-text">
+                            General Dimensions
+                        </div>
+                        <div class="dimension-text">
+                            86" L x 61" D x 33" H
+                        </div>
+                    </div>
+                    <div class="dimensions-info">
+                        <div class="dimension-text">
+                            General Dimensions
+                        </div>
+                        <div class="dimension-text">
+                            86" L x 61" D x 33" H
+                        </div>
+                    </div>
+                    <div class="dimensions-info">
+                        <div class="dimension-text">
+                            General Dimensions
+                        </div>
+                        <div class="dimension-text">
+                            86" L x 61" D x 33" H
+                        </div>
+                    </div>
+                    <div class="dimensions-info">
+                        <div class="dimension-text">
+                            General Dimensions
+                        </div>
+                        <div class="dimension-text">
+                            86" L x 61" D x 33" H
+                        </div>
+                    </div>
+                </div>
+                <div class="dimensions-image">
+                    <img src="/assets/product-details.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="about-section">
+            <div class="section-title">About this piece</div>
+            <p>The ideal three-seat sofa featuring one seat with a chaise lounge addition, one seat with an ottoman, and one seat for the chiropractor who loves to sit upright with their feet on the floor. Like everything we make, our modular design is incredibly easy to move and packed with all the clever, life-changing features you expect from Burrow, starting with a built-in USB charger.</p>
+            <div class="about-texts">
+                <div class="about-text">
+                    <div class="bold">Customizable</div>
+                    <div class="about-text">Create your ideal sectional sofa with five fabric colors, six leg finishes, and three armrest heights. You can even swap the reversible back cushions: one side is tufted for a classic look, the other smooth and contemporary.</div>
+                </div>
+                <div class="about-text">
+                    <div class="bold">Adaptable</div>
+                    <div class="about-text">Rest easy with the knowledge that your new furniture can grow and expand with your life, thanks to the universal, modular design of our Nomad Collection.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="key-features">
+            <div class="feature">
+                <img src="/assets/icon-2.webp" alt="">
+                <p>Customizable</p>
+            </div>
+            <div class="feature">
+                <img src="/assets/icon-3.webp" alt="">
+                <p>Frame</p>
+            </div>
+            <div class="feature">
+                <img src="/assets/icon-4.webp" alt="">
+                <p>Hardware</p>
+            </div>
+            <div class="feature">
+                <img src="/assets/icon-1.webp" alt="">
+                <p>Charger</p>
+            </div>
+            <div class="feature">
+                <img src="/assets/icon-5.webp" alt="">
+                <p>Legs</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="video-cards">
+            <div class="video-card">
+                <video src="/assets/product-video-1.mp4" autoplay loop></video>
+            </div>
+            <div class="text-card">
+                <h2>Durable enough for everyday drama</h2>
+                <p>Each and every component of our furniture is selected for durability, from the galvanized steel
+                    latches to the precision-milled Baltic Birch frame. The fabric is inherently scratch-resistant,
+                    thanks to an incredibly tight weave, which makes it perfect for pets and their parents.</p>
+                <div class="text-card-small">
+                    <div class="little-text-1">
+                        <p class="bold">Low carbon footprint</p>
+                        <p>Fabric made from upcycled materials</p>
+                    </div>
+                    <div class="little-text-2">
+                        <p class="bold">Sustainable wood</p>
+                        <p>Sourced from responsibly managed forests</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-cards">
+            <div class="text-card">
+                <h2>Don't sweat the spills</h2>
+                <p>Our olefin fabric is stain-resistant thanks to a deep dyeing process that colors each individual
+                    strand to the core, as opposed to other fibers that have little pores that absorb stains. You can
+                    even spray spills with a water and bleach solution (yes, we said bleach) and blot it out to clean
+                    stains.</p>
+                <div class="text-card-small">
+                    <div class="little-text-1">
+                        <p class="bold">Non toxic</p>
+                        <p>Zero chemical additives or treatments</p>
+                    </div>
+                    <div class="little-text-2">
+                        <p class="bold">Zero PFCs</p>
+                        <p>Fabric free of dangerous formaldehydes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <video src="/assets/product-video-2.mp4" autoplay loop></video>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="product-column">
+            <div class="product-item">
+                <img class="img1"src="/assets/products/1/product.webp" alt="">
+                <div class="product-item-title">
+                    <p>Nomad Sofa</p>
+                    <h6>$1595 or as low as $100/mo</h6>
+                </div>
+            </div>
+            <div class="product-item">
+                <img class="img2"src="/assets/products/2/product.webp" alt="">
+                <div class="product-item-title">
+                    <p>Nomad Sofa</p>
+                    <h6>$1595 or as low as $100/mo</h6>
+                </div>
+            </div>
+            <div class="product-item">
+                <img class="img3"src="/assets/products/3/product.webp" alt="">
+                <div class="product-item-title">
+                    <p>Nomad Sofa</p>
+                    <h6>$1595 or as low as $100/mo</h6>
+                </div>
+            </div>
+            <div class="product-page-button">
+                <button type="button" class="button yellow">SEE MORE</button>
+            </div>
+    </section>
+
+    <footer>
+        <div class="top-footer">
+            <div>
+                <input type="email" placeholder="Sign up for enthralling couch reads">
+                <button class="button">SUBSCRIBE</button>
+            </div>
+            <div class="socials">
+                <img src="/assets/socials/icons8-instagram.svg" alt="">
+                <img src="/assets/socials/icons8-facebook.svg" alt="">
+                <img src="/assets/socials/icons8-youtube.svg" alt="">
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="footer-section">
+                <ul>
+                    <li>Shopping Services</li>
+                    <li>Schedule Consultation</li>
+                    <li>Showrooms</li>
+                    <li>Trade Program</li>
+                    <li>Outlet</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <ul>
+                    <li>About</li>
+                    <li>Our Story</li>
+                    <li>Reviews</li>
+                    <li>Careers</li>
+                    <li>Financing</li>
+                    <li>Patents</li>
+                    <li>Our Blog</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <ul>
+                    <li>Resources</li>
+                    <li>Look Up Order Status</li>
+                    <li>Assembly Instructions</li>
+                    <li>Returns</li>
+                    <li>Shipping & Delivery</li>
+                    <li>FAQ</li>
+                    <li>Refer a Friend</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <ul>
+                    <li>Contact Customer Support</li>
+                    <li>Email: support@template.com</li>
+                    <li>Text: 224-628-7769</li>
+                    <li>Hours:</li>
+                    <li>Monday to Friday - 10a to 8p EST</li>
+                    <li>Saturday to Sunday - 10a to 2p EST</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="copyright">
+                <div>© 2023 Template</div>
+                <div>Terms - Accessibility - Sitemap - Privacy</div>
+            </div>
+            <div class="address">
+                <div>15 W 27th Street, 9th Floor New York, NY, 10001</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://fakestoreapi.com/products/7', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var product = JSON.parse(xhr.responseText);
+
+                    document.getElementById('product-image').src = product.image;
+                    document.getElementById('product-title').textContent = product.title;
+                    document.getElementById('product-price').textContent = '$' + product.price;
+                    document.getElementById('product-color').textContent = product.description;
+                    document.getElementById('product-arm-style').textContent = product.category;
+                    document.getElementById('product-rating').textContent = product.rating.rate;
+                    document.getElementById('product-rating-count').textContent = product.rating.count;
+                }
+            };
+            xhr.send();
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var addToCartButton = document.getElementById('add-to-cart');
+        addToCartButton.addEventListener('click', function() {
+            var productId = 1; 
+            var quantity = 1; 
+
+            
+            var cartData = {
+                userId: 7, 
+                date: new Date().toISOString().split('T')[0], 
+                products: [{
+                    productId: productId,
+                    quantity: quantity
+                }]
+            };
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('PUT', 'https://fakestoreapi.com/carts/7', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log('Added to cart! Cart Data:', cartData);
+                }
+            };
+            xhr.send(JSON.stringify(cartData));
+        });
+    });
+        document.addEventListener('DOMContentLoaded', function() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://fakestoreapi.com/products/category/jewelery', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var relatedProducts = JSON.parse(xhr.responseText);
+
+                    var relatedProductsGrid = document.getElementById('related-products-grid');
+                    relatedProducts.slice(0, 3).forEach(function(relatedProduct) {
+                        var productItem = document.createElement('div');
+                        productItem.classList.add('product-item');
+
+                        var productImage = document.createElement('img');
+                        productImage.src = relatedProduct.image;
+                        productImage.alt = relatedProduct.title;
+                        productItem.appendChild(productImage);
+
+                        var productTitle = document.createElement('h3');
+                        productTitle.textContent = relatedProduct.title;
+                        productItem.appendChild(productTitle);
+
+                        relatedProductsGrid.appendChild(productItem);
+                    });
+                }
+            };
+            xhr.send();
+        });
+    </script>
+</body>
+</html>
